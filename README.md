@@ -16,11 +16,21 @@ Stock market prediction is a prediction app that can predict Stock Closing Price
 
 # How To Use
 
-Before runnig the app make sure you have installed python3.6 and virtualenv.You can download Python from https://www.python.org/downloads/
-and virtualenv from https://virtualenv.pypa.io/en/stable/
+Before runnig the app make sure you have installed python3.6,pip and virtualenv.You can download Python from https://www.python.org/downloads/ and virtualenv from https://virtualenv.pypa.io/en/stable/ . While installing python in windows, choose the advance option.So that pip will automatically install which is very important.For Linux/OSX you don't need to install python and pip.Newer version of Linux and OSX has pre-installed Python3 and Pip. You can check the Python and Pip using following command.
+	
+	# Check Python Version
 
+	open the terminal
+	python3
+	
+	If works,then python3 and pip is insalled.If not works then you need to update python version.
+	
+	# Download and run the project
+	
 	1. Download/clone the folder.
-	2. Create a new directory.Let us our directory name is PredictionApp.This commands will work in Linux/OSX.If you are Windows user the download the Poweshell from https://github.com/PowerShell/PowerShell and use it. 
+	2. Open the terminal(Linux/OSX).For windows you can use Poweshell.You can download Poweshell from https://github.com/PowerShell/PowerShell 
+	
+	Now we need to create a new directory.Let us our directory name is PredictionApp.
 	
 	mkdir PredictionApp
 	cd PredictionApp
@@ -31,6 +41,7 @@ and virtualenv from https://virtualenv.pypa.io/en/stable/
 	4. Run the following command.
 	
 	cd src
+	pip install -r requirements.txt
 	python manage.py makemigrations
 	python manage.py migrate
 	python manage.py runserver
