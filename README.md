@@ -1,6 +1,6 @@
 # Stock-Market-Prediction
 
-Stock market prediction is a prediction app that can predict Stock Closing Prices.It is built with Python,Django with Linear regression. For data set I have used Yahoo Finance.
+Stock market prediction is a prediction app that can predict Stock Closing Prices.It is built with Python,Django.For ML technique I have used Linear regression. For data set I have used Yahoo Finance.
 
 # Dependencies
 
