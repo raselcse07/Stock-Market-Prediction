@@ -1,0 +1,9 @@
+Django==1.11
+django-crispy-forms==1.7.2
+numpy==1.14.3
+pandas==0.23.0
+python-dateutil==2.7.3
+pytz==2018.4
+scikit-learn==0.19.1
+scipy==1.1.0
+six==1.11.0
