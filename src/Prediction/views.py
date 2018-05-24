@@ -27,14 +27,15 @@ def Home(request):
 
 
         find_data_set= compnay_name.upper()+".csv"
-        # try:
-        data_set = "Data-Set/"+find_data_set
-        tday= datetime.datetime.now().day
-        get_data(data_set)
-        predicted_price, coefficient, constant = predict_price(dates_final,prices,tday)
-        predicted ="%.2f" % (predicted_price)
-        # except:
-        #     errors = "Company Not Found !!!"
+        
+        try:
+            data_set = "Data-Set/"+find_data_set
+            tday= datetime.datetime.now().day
+            get_data(data_set)
+            predicted_price, coefficient, constant = predict_price(dates_final,prices,tday)
+            predicted ="%.2f" % (predicted_price)
+        except:
+            errors = "Company Not Found !!!"
 
 
     template_name="Prediction/home.html"
